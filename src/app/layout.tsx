@@ -1,14 +1,12 @@
-'use client'
+import './globals.css';
+import { Metadata } from 'next';
+import { Header } from '@/app/components/Header';
 
-import '../theme/globals.css';
-import { theme } from '../theme';
-import { ThemeProvider, CssBaseline } from '@mui/material';
-
-const metadata = {
+export const metadata: Metadata = {
   title: 'Fort eSports',
   description: 'Site oficial da Fort eSports, organização de esportes eletrônicos.',
   keywords: 'fort, esports, csgo, valorant, org, games, freefire',
-}
+};
 
 export default function RootLayout({
   children,
@@ -17,16 +15,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <title>{metadata.title}</title>
-      <meta name="description" content={metadata.description} />
-      <meta name="keywords" content={metadata.keywords} />
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <body>
-          <header>HEADER</header>
-          {children}
-        </body>
-      </ThemeProvider>
+      <body>
+        <Header />
+        {children}
+      </body>
     </html>
   )
 }

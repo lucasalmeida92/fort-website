@@ -1,5 +1,5 @@
 
-export default function Home() {
+export default function TeamsPage() {
   return (
     <main>
       <h2>Teams</h2>
