@@ -7,9 +7,19 @@
 @layer base {
   :root {
     --color-pink: #ff0084;
+    --color-pink2: #c7066a;
     --color-purple1: #560099;
     --color-purple2: #5600db;
     --color-almostWhite: #f2f2f2;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    background-color: var(--color-pink);
+  }
+  .btn-primary:hover {
+    background-color: var(--color-pink2);
   }
 }
 
