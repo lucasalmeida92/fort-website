@@ -1,0 +1,66 @@
+.team {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  width: 232px;
+  height: 320px;
+  border-radius: 1rem;
+
+  &-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8
+  }
+
+  &-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    background: linear-gradient(160deg,
+      rgba(0,0,0, 0.8) 0%, rgba(0,0,0, 0.4) 20%,
+      rgba(0,0,0, 0.2) 30%, rgba(0,0,0, 0.2) 70%,
+      rgba(0,0,0, 0.6) 100%
+    );
+
+    h3 {
+      transition: all 200ms ease;
+    }
+
+    .game-logo {
+      width: 100%;
+      height: 40px;
+      object-fit: contain;
+      filter: brightness(0);
+    }
+  }
+
+  &:hover {
+    transform: rotate(1deg) translateY(-11px) scale(1.05);
+    // margin: 0 16px;
+
+    .team-image {
+      opacity: 1;
+    }
+    .team-content {
+      h3 {
+        font-size: 1.3rem;
+      }
+
+      figure {
+        background-color: var(--color-purple2);
+      }
+
+      .game-logo {
+        // filter: sepia(1) hue-rotate(258deg) saturate(400);
+        filter: brightness(10)
+      }
+    }
+  }
+}
