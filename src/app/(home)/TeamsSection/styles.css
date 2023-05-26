@@ -5,7 +5,7 @@
   position: relative;
   width: 240px;
   height: 320px;
-  background-color: rgba(0,0,0, 0.3);
+  background: linear-gradient(160deg, rgba(0,0,0, 0.2) 0%, rgba(0,0,0, 0.4) 100%);
 }
 
 .team:hover {
