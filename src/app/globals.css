@@ -24,6 +24,12 @@
   .btn-primary:hover {
     background-color: var(--color-pink2);
   }
+  .btn-secondary {
+    background-color: var(--color-purple1);
+  }
+  .btn-secondary:hover {
+    background-color: var(--color-purple2);
+  }
 }
 
 html, body {

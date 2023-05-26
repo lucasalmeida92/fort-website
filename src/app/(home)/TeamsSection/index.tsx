@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/Container";
+import { SectionTitle } from "@/components/SectionTitle";
 import csGoLogo from "./csgo-logo.png";
 import valorantLogo from "./valorant-logo.png";
 import twitchLogo from "./twitch-logo.svg";
@@ -13,7 +14,7 @@ import './styles.scss';
 export function TeamsSection() {
   return (
     <Container className="flex flex-col min-h-[70vh] py-8 items-center justify-center">
-      <h2 className="text-4xl mb-12 uppercase font-bold">Nossos times</h2>
+      <SectionTitle>Nossos times</SectionTitle>
       <ul className="flex gap-6 flex-wrap justify-center">
         <li>
           <Link

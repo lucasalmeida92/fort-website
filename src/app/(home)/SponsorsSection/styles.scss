@@ -1,0 +1,61 @@
+.sponsors {
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: linear-gradient(160deg,
+      rgba(0,0,0, 0.1) 0%, rgba(0,0,0, 0.1) 30%,
+      rgba(0,0,0, 0.2) 70%,rgba(0,0,0, 0.3) 100%
+    );
+
+  .sponsor {
+    & > img {
+      object-fit: contain;
+      filter: saturate(0) brightness(2.2);
+      transition: all 200ms ease;
+
+      &:hover {
+        filter: none;
+      }
+    }
+  }
+
+  &-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    &.master {
+      .sponsor {
+        & > img {
+          width: 300px;
+          max-height: 200px;
+        }
+      }
+    }
+    &.golds {
+      .sponsor {
+        & > img {
+          width: 200px;
+          max-height: 150px;
+        }
+      }
+    }
+    &.silvers {
+      .sponsor {
+        & > img {
+          max-width: 120px;
+          max-height: 80px;
+        }
+      }
+    }
+    &.supporters {
+      .sponsor {
+        & > img {
+          width: 100px;
+          max-height: 50px;
+        }
+      }
+    }
+  }
+}
