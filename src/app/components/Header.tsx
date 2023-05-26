@@ -31,7 +31,7 @@ export function Header() {
               </label>
               <ul
                 tabIndex={0}
-                className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-gray-950 rounded-box w-[calc(100vw-40px)]"
+                className="menu menu-compact dropdown-content md:hidden mt-3 p-2 shadow bg-gray-950 rounded-box w-[calc(100vw-40px)]"
               >
                 <li>
                   <Link
