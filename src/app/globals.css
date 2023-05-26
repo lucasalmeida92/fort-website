@@ -15,6 +15,9 @@
 }
 
 @layer components {
+  .btn {
+    border-width: 0;
+  }
   .btn-primary {
     background-color: var(--color-pink);
   }

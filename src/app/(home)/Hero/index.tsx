@@ -5,7 +5,7 @@ import coverImage from "./top-cover.png";
 export function Hero() {
   return (
     <Container>
-      <div className="hero">
+      <div className="hero min-h-[70vh]">
         <div className="hero-content flex-col md:flex-row-reverse">
           <Image
             src={coverImage}
