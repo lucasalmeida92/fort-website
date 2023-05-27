@@ -1,0 +1,12 @@
+.instagram-button {
+  transition: all 200ms ease;
+  background: radial-gradient(
+    circle at 75% 200%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%
+  );
+
+  &:hover {
+    background: radial-gradient(
+      circle at 45% 150%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%
+    );
+  }
+}

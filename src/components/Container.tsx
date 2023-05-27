@@ -1,12 +1,14 @@
 export function Container({
   children,
-  className
+  className,
+  ...rest
 }: {
   children: React.ReactNode,
-  className?: string
+  className?: string,
+  [x:string]: any;
 }) {
   return (
-    <div className={`max-w-screen-lg mx-auto px-3 ${className ?? ''}`}>
+    <div className={`max-w-screen-lg mx-auto px-3 ${className ?? ''}`} {...rest}>
         {children}
     </div>
   )

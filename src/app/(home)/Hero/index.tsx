@@ -15,7 +15,7 @@ export function Hero() {
           <div>
             <h1 className="text-5xl font-bold">Fort eSports,<br />o maior time do Ceará!</h1>
             <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-            <button className="btn btn-primary">CONHECER MAIS</button>
+            <a href="/#keep-up" title="Faça parte" className="btn btn-primary">Faça Parte</a>
           </div>
         </div>
       </div>

@@ -16,7 +16,7 @@ export default function HomePage() {
       <Hero />
       <FeaturedSection />
       <TeamsSection />
-      <Container className="flex flex-wrap items-center justify-center min-h-[25vh]">
+      <Container id="keep-up" className="flex flex-col items-center justify-center py-8 min-h-[70vh]">
         <SectionTitle className="w-full text-center">Acompanhe</SectionTitle>
         <div className="flex flex-col w-full md:flex-row">
           <NextEventsCard />

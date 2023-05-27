@@ -6,7 +6,7 @@ export function SectionTitle({
   className?: string
 }) {
   return (
-    <h2 className={`text-2xl md:text-4xl uppercase font-bold mb-12 ${className ?? ''}`}>
+    <h2 className={`text-3xl md:text-4xl uppercase font-bold mb-12 ${className ?? ''}`}>
       {children}
     </h2>
   )
