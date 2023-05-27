@@ -25,7 +25,7 @@ export function TeamsSection() {
             <Image src={valorantMale} alt="Valorant team image" className="team-image" />
             <span className="team-content">
               <h3 className="text-lg drop-shadow-md">Valorant Masculino</h3>
-              <figure className="bg-white p-2 rounded-xl">
+              <figure className="p-2 rounded-xl">
                 <Image src={valorantLogo} alt="Logo Valorant" className="game-logo" />
               </figure>
             </span>
@@ -40,7 +40,7 @@ export function TeamsSection() {
             <Image src={valorantFemale} alt="Valorant team image" className="team-image" />
             <span className="team-content">
               <h3 className="text-lg drop-shadow-md">Valorant Feminino</h3>
-              <figure className="bg-white p-2 rounded-xl">
+              <figure className="p-2 rounded-xl">
                 <Image src={valorantLogo} alt="Logo Valorant" className="game-logo" />
               </figure>
             </span>
@@ -55,7 +55,7 @@ export function TeamsSection() {
             <Image src={csgoMale} alt="Valorant team image" className="team-image" />
             <span className="team-content">
               <h3 className="text-lg drop-shadow-md">CS:GO Masculino</h3>
-              <figure className="bg-white p-2 rounded-xl">
+              <figure className="p-2 rounded-xl">
                 <Image src={csGoLogo} alt="Logo CS:GO" className="game-logo" />
               </figure>
             </span>
@@ -70,7 +70,7 @@ export function TeamsSection() {
             <Image src={streamersImage} alt="Valorant team image" className="team-image" />
             <span className="team-content">
               <h3 className="text-lg drop-shadow-md">Streamers</h3>
-              <figure className="bg-white p-2 rounded-xl">
+              <figure className="p-2 rounded-xl">
                 <Image src={twitchLogo} alt="Logo Streamers" className="game-logo" />
               </figure>
             </span>

@@ -18,10 +18,10 @@ export function FeaturedSection() {
           />
         </figure>
         <div className="card-body">
-          <h2 className="card-title text-white text-3xl drop-shadow-md">Nova Jersey!</h2>
-          <p className="text-white font-light">If a dog chews shoes whose shoes does he choose?</p>
+          <h2 className="card-title text-white text-3xl drop-shadow-md">Novo manto!</h2>
+          <p className="text-white font-light">Nossa nova jersey já está disponível em nossa loja.</p>
           <div className="card-actions justify-end">
-            <button className="btn btn-primary">Compre agora</button>
+            <button className="btn btn-primary">Ver na loja</button>
           </div>
         </div>
       </div>

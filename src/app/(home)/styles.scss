@@ -1,0 +1,9 @@
+.glass-no-bg {
+  background: transparent;
+  box-shadow: inset 0 0 20px rgba(255,255,255, 0.2), 0 0 5px rgba(255,255,255,0.8);
+
+  &:hover {
+    background: rgba(255,255,255, 0.05);
+    box-shadow: inset 0 0 20px rgba(255,255,255, 0.2), 0 0 5px rgba(255,255,255,0.8);
+  }
+}
