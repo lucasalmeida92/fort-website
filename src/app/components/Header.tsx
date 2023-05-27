@@ -32,22 +32,32 @@ export function Header() {
               <ul
                 tabIndex={0}
                 className="menu menu-compact dropdown-content md:hidden mt-3 p-2 shadow bg-gray-950 rounded-box w-[calc(100vw-40px)]"
-              >
-                <li>
-                  <Link
-                    href="/teams"
-                    className="text-lg transition-all ease hover:ml-2 hover:bg-transparent hover:text-pink"
-                  >
-                    Nossos times
-                  </Link>
-                </li>
-                <li>
+                >
+                {/* <li>
                   <Link
                     href="/about-us"
                     className="text-lg transition-all ease hover:ml-2 hover:bg-transparent hover:text-pink"
                   >
                     Sobre nós
                   </Link>
+                </li> */}
+                <li>
+                  <a
+                    href="/#our-teams"
+                    title="Nossos times"
+                    className="text-lg transition-all ease hover:ml-2 hover:bg-transparent hover:text-pink"
+                  >
+                    Nossos times
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/#store"
+                    title="Fort Store"
+                    className="text-lg transition-all ease hover:ml-2 hover:bg-transparent hover:text-pink"
+                  >
+                    Fort Store
+                  </a>
                 </li>
               </ul>
             </div>
@@ -61,11 +71,14 @@ export function Header() {
           </div>
           <div className="navbar-center hidden md:flex">
             <ul className="menu menu-horizontal px-1">
+              {/* <li>
+                <Link href="/about-us">Sobre nós</Link>
+              </li> */}
               <li>
-                <Link href="/teams">Nossos times</Link>
+                <a href="/#our-teams" title="Nossos times">Nossos times</a>
               </li>
               <li>
-                <Link href="/about-us">Sobre nós</Link>
+                <a href="/#store" title="Fort Store">Fort Store</a>
               </li>
             </ul>
           </div>

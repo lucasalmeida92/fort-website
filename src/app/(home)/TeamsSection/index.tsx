@@ -13,7 +13,7 @@ import './styles.scss';
 
 export function TeamsSection() {
   return (
-    <Container className="flex flex-col min-h-[70vh] py-8 items-center justify-center">
+    <Container id="our-teams" className="flex flex-col min-h-[70vh] py-8 items-center justify-center">
       <SectionTitle>Nossos times</SectionTitle>
       <ul className="flex gap-6 flex-wrap justify-center">
         <li>

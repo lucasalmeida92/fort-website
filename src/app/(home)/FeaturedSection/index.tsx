@@ -6,7 +6,7 @@ import './styles.css';
 
 export function FeaturedSection() {
   return (
-    <Container className="flex items-center min-h-[70vh]">
+    <Container id="store" className="flex items-center min-h-[70vh]">
       <div
         className="card w-full h-96 my-4 bg-base-100 shadow-xl image-full feat-card"
       >
