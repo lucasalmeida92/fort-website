@@ -8,7 +8,7 @@ const socialLinkClasses = 'mx-2 text-2xl hover:text-pink';
 
 export function Footer() {
   return (
-    <Container>
+    <Container className="z-20">
       <footer className="footer footer-center p-10 text-primary-content">
         <div>
           <Image

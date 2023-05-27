@@ -1,7 +1,7 @@
 import './globals.css';
 import { Metadata } from 'next';
-import { Header } from '@/app/components/Header';
-import { Footer } from '@/app/components/Footer';
+import { Header } from '@/app/layout-components/Header';
+import { Footer } from '@/app/layout-components/Footer';
 
 export const metadata: Metadata = {
   title: 'Fort eSports',
@@ -17,9 +17,9 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className="scroll-smooth">
       <body>
-        <div className="flex flex-col min-h-screen">
+        <div className="flex flex-col min-h-screen relative z-10 overflow-x-hidden">
           <Header />
-          <main className="grow pt-6 pb-9">
+          <main className="grow pt-6 pb-9 z-10">
             {children}
           </main>
           <Footer />

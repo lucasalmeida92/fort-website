@@ -8,7 +8,7 @@ const socialLinkClasses = 'mr-4 text-2xl hover:text-pink';
 
 export function Header() {
   return (
-    <header className="h-16">
+    <header className="h-16 z-20">
       <Container className="h-full">
         <div className="navbar bg-base-100 bg-transparent px-0">
           <div className="navbar-start">
@@ -33,14 +33,14 @@ export function Header() {
                 tabIndex={0}
                 className="menu menu-compact dropdown-content md:hidden mt-3 p-2 shadow bg-gray-950 rounded-box w-[calc(100vw-40px)]"
                 >
-                {/* <li>
+                <li>
                   <Link
                     href="/about-us"
                     className="text-lg transition-all ease hover:ml-2 hover:bg-transparent hover:text-pink"
                   >
                     Sobre nós
                   </Link>
-                </li> */}
+                </li>
                 <li>
                   <a
                     href="/#our-teams"
@@ -71,9 +71,9 @@ export function Header() {
           </div>
           <div className="navbar-center hidden md:flex">
             <ul className="menu menu-horizontal px-1">
-              {/* <li>
+              <li>
                 <Link href="/about-us">Sobre nós</Link>
-              </li> */}
+              </li>
               <li>
                 <a href="/#our-teams" title="Nossos times">Nossos times</a>
               </li>
