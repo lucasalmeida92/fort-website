@@ -1,0 +1,26 @@
+.sticky {
+  .header-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 64px;
+    max-width: none;
+    background-color: rgba(86, 0, 153, 0.4);
+    backdrop-filter: blur(8px);
+    transform: translateY(0);
+    animation-name: slideInFromTop;
+    animation-duration: 500ms;
+    animation-timing-function: ease;
+  }
+}
+
+@keyframes slideInFromTop {
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}

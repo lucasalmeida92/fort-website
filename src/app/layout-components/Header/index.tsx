@@ -1,15 +1,33 @@
+'use client'
+
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { FaInstagram, FaTiktok, FaTwitter } from "react-icons/fa";
 import { Container } from "@/components/Container";
-import fortLogoSolid from "./logo-fort-solid.png";
+import fortLogoSolid from "../logo-fort-solid.png";
+import './styles.scss';
 
 const socialLinkClasses = 'mr-4 text-2xl hover:text-pink';
 
 export function Header() {
+  const [isSticky, setIsSticky] = useState(false);
+
+  const handleOnScroll = () => {
+    const scrollTop = window.scrollY;
+    scrollTop >= 250 ? setIsSticky(true) : setIsSticky(false);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleOnScroll);
+    return () => {
+        window.removeEventListener('scroll', handleOnScroll);
+    };
+  });
+
   return (
-    <header className="h-16 z-20">
-      <Container className="h-full">
+    <header id="header" className={`h-16 z-20 ${isSticky ? 'sticky' : ''}`}>
+      <Container className="h-full header-container">
         <div className="navbar bg-base-100 bg-transparent px-0">
           <div className="navbar-start">
             <div className="dropdown">
