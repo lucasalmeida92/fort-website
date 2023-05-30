@@ -34,15 +34,18 @@
     }
 
     figure {
-      background-color: var(--color-purple2);
+      // background-color: var(--color-purple2);
+      transition: all 200ms ease;
+
+      .game-logo {
+        width: 100%;
+        height: 40px;
+        object-fit: contain;
+        filter: brightness(10);
+        opacity: 0.8;
+      }
     }
 
-    .game-logo {
-      width: 100%;
-      height: 40px;
-      object-fit: contain;
-      filter: brightness(10);
-    }
   }
 
   &:hover {
@@ -58,12 +61,16 @@
       }
 
       figure {
-        background-color: white;
+        // background-color: white;
+        // backdrop-filter: blur(1px);
+        background-color: rgb(255, 255, 255, 0.1);
+
+        .game-logo {
+          opacity: 1;
+          // filter: brightness(0);
+        }
       }
 
-      .game-logo {
-        filter: brightness(0)
-      }
     }
   }
 }
