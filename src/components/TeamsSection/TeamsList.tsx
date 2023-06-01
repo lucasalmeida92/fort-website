@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import csGoLogo from "./csgo-logo.png";
-import valorantLogo from "./valorant-logo.png";
-import twitchLogo from "./twitch-logo.svg";
+import csGoLogo from "@/assets/csgo-logo.png";
+import valorantLogo from "@/assets/valorant-logo.png";
+import twitchLogo from "@/assets/twitch-logo.svg";
 import valorantMale from "./gekko.jpeg";
 import valorantFemale from "./raze.jpeg";
 import csgoMale from "./csgo.jpeg";
@@ -29,7 +29,7 @@ export function TeamsList() {
       </li>
       <li>
         <Link
-          href="/teams/valorant-male"
+          href="/teams/valorant-female"
           title="Valorant Feminino"
           className="hover:shadow-2xl hover:-translate-y-1 team"
         >
@@ -44,7 +44,7 @@ export function TeamsList() {
       </li>
       <li>
         <Link
-          href="/teams/valorant-male"
+          href="/teams/csgo"
           title="CS:GO Masculino"
           className="hover:shadow-2xl hover:-translate-y-1 team"
         >

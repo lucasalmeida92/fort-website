@@ -1,0 +1,55 @@
+.team-member {
+  &-card {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    width: 232px;
+    height: 320px;
+    border-radius: 1rem;
+    transition: all 200ms ease;
+  }
+
+  &-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 200ms ease;
+  }
+
+  &-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    background: linear-gradient(160deg,
+      rgba(0,0,0, 0.0) 0%, rgba(0,0,0, 0.1) 20%,
+      rgba(0,0,0, 0.2) 30%, rgba(0,0,0, 0.5) 70%,
+      rgba(0,0,0, 0.9) 100%
+    );
+
+    h3 {
+      transition: all 200ms ease;
+    }
+  }
+
+  &:hover {
+    .team-member-card {
+      transform: rotate(1deg) translateY(-11px) scale(1.05);
+    }
+
+    .team-member-image {
+      height: 110%;
+    }
+
+    .team-member-content {
+      h3 {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}

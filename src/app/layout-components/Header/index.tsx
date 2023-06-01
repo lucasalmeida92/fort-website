@@ -61,7 +61,7 @@ export function Header() {
                 </li>
                 <li>
                   <a
-                    href="/#our-teams"
+                    href="/teams"
                     title="Nossos times"
                     className="text-lg transition-all ease hover:ml-2 hover:bg-transparent hover:text-pink"
                   >
@@ -93,7 +93,7 @@ export function Header() {
                 <Link href="/about-us">Sobre nós</Link>
               </li>
               <li>
-                <a href="/#our-teams" title="Nossos times">Nossos times</a>
+                <a href="/teams" title="Nossos times">Nossos times</a>
               </li>
               <li>
                 <a href="/#store" title="Fort Store">Fort Store</a>
