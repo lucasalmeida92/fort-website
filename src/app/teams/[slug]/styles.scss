@@ -1,5 +1,5 @@
 .team-member {
-  &-card {
+  &__card {
     display: block;
     overflow: hidden;
     position: relative;
@@ -9,14 +9,14 @@
     transition: all 200ms ease;
   }
 
-  &-image {
+  &__image {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: all 200ms ease;
   }
 
-  &-content {
+  &__content {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -31,25 +31,43 @@
       rgba(0,0,0, 0.2) 30%, rgba(0,0,0, 0.5) 70%,
       rgba(0,0,0, 0.9) 100%
     );
+    transition: all 400ms ease;
 
     h3 {
       transition: all 200ms ease;
     }
   }
 
+  &__details {
+    max-height: 0;
+    opacity: 0;
+    transition: all 500ms ease;
+  }
+
   &:hover {
-    .team-member-card {
+    .team-member__card {
       transform: rotate(1deg) translateY(-11px) scale(1.05);
     }
 
-    .team-member-image {
+    .team-member__image {
       height: 110%;
     }
 
-    .team-member-content {
+    .team-member__content {
+      background: linear-gradient(160deg,
+        rgba(0,0,0, 0.2) 0%, rgba(0,0,0, 0.1) 20%,
+        rgba(0,0,0, 0.55) 50%, rgba(0,0,0, 0.7) 70%,
+        rgba(0,0,0, 1) 100%
+      );
+
       h3 {
         font-size: 1.3rem;
       }
+    }
+
+    .team-member__details {
+      max-height: 200px;
+      opacity: 1;
     }
   }
 }

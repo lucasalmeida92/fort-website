@@ -7,6 +7,8 @@ import valorantLogo from "@/assets/valorant-logo.png";
 import twitchLogo from "@/assets/twitch-logo.svg";
 import { TeamMember } from "./TeamMember";
 
+import coverValorant from "./cover-valorant.jpg";
+
 import photoToxx from "./toxx.jpg";
 import photoMarcelinn from "./marcelinn.jpg";
 import photoZek from "./zek.jpg";
@@ -45,60 +47,69 @@ export default function TeamPage({ params }: Props) {
         photo: photoToxx,
         role: 'player',
         instagram: 'caio.limajj',
-        twitter: null,
       },
       {
         nick: 'MarcelinN',
-        name: 'Caio Oliveira',
+        name: 'Marcelo Igor',
         photo: photoMarcelinn,
         role: 'player',
-        instagram: 'caio.limajj',
-        twitter: null,
+        instagram: 'marceloigrs',
       },
       {
         nick: 'Zek',
-        name: 'Caio Oliveira',
+        name: 'Rubens Emanuel',
         photo: photoZek,
         role: 'player',
-        instagram: 'caio.limajj',
-        twitter: null,
+        instagram: 'zekzin_',
+        twitch: 'zeksvs',
       },
       {
         nick: 'Ch1pe',
-        name: 'Caio Oliveira',
+        name: 'Riquelme Hércules',
         photo: photoCh1pe,
         role: 'player',
-        instagram: 'caio.limajj',
-        twitter: null,
+        instagram: 'riquelmew1',
+        twitch: 'ch1pe_',
       },
       {
         nick: 'Flityz',
-        name: 'Caio Oliveira',
+        name: 'Felipe Inácio',
         photo: photoFlityz,
         role: 'player',
-        instagram: 'caio.limajj',
-        twitter: null,
+        instagram: 'fp.iin7',
       },
       {
         nick: 'Dzn',
         name: 'Matheus Fernandes',
         photo: photoDzn,
-        role: 'player',
-        instagram: 'caio.limajj',
-        twitter: null,
+        role: 'manager',
+        instagram: 'eimatheusf',
+        twitter: 'eimths',
       },
     ]
   };
 
   return (
     <>
-      <Container className="mt-[3rem] md:mt-[4rem] mb-[10rem] text-center">
-        <div className="grid place-items-center h-56">
+      <div
+        className="w-screen h-screen absolute z-0 opacity-80  bg-red-900 top-0 left-0 bg-cover"
+        style={{
+          backgroundImage: `url(${coverValorant.src})`,
+          backgroundPosition: 'center',
+        }}
+      >
+        <div
+          className="w-full h-full"
+          style={{ backgroundImage: `linear-gradient(160deg, rgba(0,0,0, 0.94) 0%, rgba(0,0,0, 0.72) 50%, rgba(0,0,0, 0.8) 100%)` }}
+        ></div>
+      </div>
+      <Container className="relative mt-[3rem] md:mt-[4rem] mb-[10rem] text-center">
+        <div className="grid place-items-center mb-11">
           {teamInfo?.type &&
             <Image
               src={teamTypeImage[teamInfo.type as TeamType]}
               alt="Valorant logo"
-              className="w-[200px] object-contain"
+              className="w-[100px] object-contain"
               />
           }
         </div>
