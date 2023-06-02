@@ -12,11 +12,15 @@ export function OurHistory() {
       <div className={`mt-7 relative overflow-hidden transition-all duration-500 ${isExpanded ? 'max-h-[1000px]' : 'max-h-[300px]'}`}>
         <div>
           <p className="text-white font-light leading-relaxed">
-            Como toda equipe somos um grupo de pessoas que segue o sonho de ser campeão todos os dias.<br />
-            A fort começou em 2019 jogando free fire onde conquistou isso e isso.<br /><br />
-            Com essa experiencia montamos o time de CSGO e de Valorant junto do Lucas KOE e do Matheus DZN. <br />
-            Desde de 2022 conseguimos conquistar todos os títulos que jogamos com o time de valorant e estamos evoluindo cada dia mais nosso time de CS.<br /><br />
-            Mas nosso time não é somente esports mas tbm é pessoas, esse ano estamos com um time de streamers diversos que trazem a alegria da galera no dia dia e ainda ajudam a narrar nossas partidas. (somos a maior org do estado do Ceara)
+            Começamos em 2020 jogando Free Fire onde conquistamos um espaço no cenário amador.
+            <br/><br/>
+            Com essa experiência, em 2022 montamos o time de CS:GO e de Valorant, junto do Lucas "Koe" e do Matheus "DZN".
+            <br/><br/>
+            Desde então conseguimos conquistar todos os títulos que jogamos com o time de Valorant e estamos evoluindo cada dia mais nosso time de CS:GO.
+            <br/><br/>
+            Porém nossa organização vai além do eSports.
+            <br/>Em 2023 lançamos uma equipe de streamers, que trazem a alegria da comunidade diariamente e que transmitem algumas de nossas partidas.
+            <br/><br/>Assim nos tornamos a maior organização de eSports do Ceará!
           </p>
         </div>
         <div

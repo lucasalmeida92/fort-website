@@ -16,7 +16,7 @@ export function Hero() {
             <h1 className="text-3xl md:text-5xl font-normal leading-10 md:leading-[3.8rem]">
               <span className="font-bold">Fort eSports</span>,<br />o maior time do Ceará!
             </h1>
-            <p className="mt-4 font-light">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+            <p className="mt-4 font-light">Somos uma organização de esportes eletrônicos que atua no cenário de Valorant e CS:GO.</p>
             <a href="/#keep-up" title="Faça parte" className="btn btn-primary mt-7">Quero fazer parte</a>
           </div>
         </div>
